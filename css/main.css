@@ -693,7 +693,8 @@ p {
   left: 16px;
 }
 
-.comment-textarea:focus + .comment__label {
+.comment-textarea:focus ~ .comment__label,
+.comment-textarea:not(:placeholder-shown) ~ .comment__label {
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
   color: #2196f3;

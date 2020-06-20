@@ -128,7 +128,8 @@
   left: 16px;
 }
 
-.comment-textarea:focus + .comment__label {
+.comment-textarea:focus ~ .comment__label,
+.comment-textarea:not(:placeholder-shown) ~ .comment__label {
   transform: translateY(-200%);
   color: $accentColor;
 }
