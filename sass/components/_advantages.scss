@@ -1,0 +1,49 @@
+.advantages {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages .item {
+  display: block;
+  padding: 0;
+  max-width: 270px;
+}
+
+.advantages .item + .item {
+  margin-left: 30px;
+}
+
+.advantages .link {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.advantages-rectangle {
+  display: inline-block;
+  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages-rectangle .icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantages .advatage-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.advantages .text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 2;
+}

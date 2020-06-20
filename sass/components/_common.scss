@@ -1,0 +1,110 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: $primaryTextColor;
+  background-color: $primaryWhiteColor;
+  letter-spacing: 0.03em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.link {
+  text-decoration: none;
+  color: $primaryTextColor;
+  fill: currentColor;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+.item {
+  list-style: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $titleTextColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.centered {
+  text-align: center;
+}
