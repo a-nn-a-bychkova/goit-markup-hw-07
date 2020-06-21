@@ -10,12 +10,11 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition-duration: 250ms;
   transition-timing-function: $timingFunction;
-}
-
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .form {
@@ -31,27 +30,27 @@
 
   text-align: center;
   background-color: $primaryWhiteColor;
-}
 
-.form__title {
-  display: block;
+  &__title {
+    display: block;
 
-  max-width: 100%;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  color: $titleTextColor;
-  margin-bottom: 30px;
-}
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $titleTextColor;
+    margin-bottom: 30px;
+  }
 
-.form__field {
-  @include centeredFlex();
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 28px;
+  &__field {
+    @include centeredFlex();
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
 
-  width: 100%;
+    width: 100%;
+  }
 }
 
 .form__input {
@@ -62,11 +61,10 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-}
-
-.form__input:focus {
-  border: 1px solid $accentColor;
-  outline: none;
+  &:focus {
+    border: 1px solid $accentColor;
+    outline: none;
+  }
 }
 
 .form__icon {
@@ -77,10 +75,9 @@
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
-}
-
-.form__input:focus + .form__icon {
-  fill: $accentColor;
+  .form__input:focus + & {
+    fill: $accentColor;
+  }
 }
 
 .form__label {
@@ -96,12 +93,12 @@
   transition-timing-function: $timingFunction;
 
   line-height: 1.14;
-}
 
-.form__input:focus ~ .form__label,
-.form__input:not(:placeholder-shown) ~ .form__label {
-  transform: translateX(-24px) translateY(-250%);
-  color: $accentColor;
+  .form__input:focus ~ &,
+  .form__input:not(:placeholder-shown) ~ & {
+    transform: translateX(-24px) translateY(-250%);
+    color: $accentColor;
+  }
 }
 
 /*textarea*/
@@ -115,23 +112,21 @@
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+  &:focus {
+    border: 1px solid $accentColor;
+    outline: none;
+  }
 }
-
-.comment-textarea:focus {
-  border: 1px solid $accentColor;
-  outline: none;
-}
-
 .comment__label {
   position: absolute;
   top: 12px;
   left: 16px;
-}
 
-.comment-textarea:focus ~ .comment__label,
-.comment-textarea:not(:placeholder-shown) ~ .comment__label {
-  transform: translateY(-200%);
-  color: $accentColor;
+  .comment-textarea:focus ~ &,
+  .comment-textarea:not(:placeholder-shown) ~ & {
+    transform: translateY(-200%);
+    color: $accentColor;
+  }
 }
 
 /*policy*/
@@ -164,14 +159,14 @@
   background-size: auto;
   transition-duration: 250ms;
   transition-timing-function: $timingFunction;
-}
 
-.policy-checkbox:checked + .checkbox__icon {
-  border-color: $accentColor;
-  background-color: $accentColor;
-  background-origin: border-box;
-  background-size: contain;
-  background-image: url(../images/index-images/check-1.svg);
+  .policy-checkbox:checked + & {
+    border-color: $accentColor;
+    background-color: $accentColor;
+    background-origin: border-box;
+    background-size: contain;
+    background-image: url(../images/index-images/check-1.svg);
+  }
 }
 
 .conditions-link {

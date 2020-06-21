@@ -6,6 +6,9 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  .item + .item {
+    margin-left: 8px;
+  }
 }
 
 .filter__button {
@@ -32,8 +35,4 @@
     color: $primaryWhiteColor;
     background-color: $accentColor;
   }
-}
-
-.filter .item + .item {
-  margin-left: 8px;
 }
