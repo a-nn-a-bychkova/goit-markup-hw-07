@@ -1,4 +1,4 @@
-.nav-container__logo {
+.nav__logo {
   white-space: nowrap;
   margin-right: 85px;
   color: $accentColor;
@@ -8,14 +8,15 @@
   line-height: 1.2;
 }
 
-.nav-container__studio {
+.footer__logo {
+  @extend.nav__logo;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nav__studio {
   color: $titleTextColor;
   &--white {
     color: $primaryWhiteColor;
   }
-}
-
-.footer-contacts__logo {
-  display: block;
-  margin-bottom: 10px;
 }

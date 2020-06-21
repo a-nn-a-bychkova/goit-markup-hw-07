@@ -60,42 +60,6 @@
   margin-bottom: 21px;
 }
 
-.social-media {
-  @include centeredFlex();
-  padding: 0;
-  margin: 0;
-  &__item + &__item {
-    margin-left: 10px;
-  }
-}
-
-.social-media__link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    fill: $primaryWhiteColor;
-    background-color: $accentColor;
-  }
-  &--inverse {
-    fill: $primaryWhiteColor;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-}
-
-.social-media__logo {
-  fill: inherit;
-  width: 20px;
-  height: 20px;
-  &--inverse {
-    fill: inherit;
-  }
-}
-
 .subscribe {
   max-width: 570px;
   &__container {

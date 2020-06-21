@@ -262,7 +262,7 @@ p {
   height: 14.94px;
 }
 
-.nav-container__logo {
+.nav__logo, .footer__logo {
   white-space: nowrap;
   margin-right: 85px;
   color: #2196f3;
@@ -272,17 +272,17 @@ p {
   line-height: 1.2;
 }
 
-.nav-container__studio {
+.footer__logo {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nav__studio {
   color: #212121;
 }
 
-.nav-container__studio--white {
+.nav__studio--white {
   color: #ffffff;
-}
-
-.footer-contacts__logo {
-  display: block;
-  margin-bottom: 10px;
 }
 
 .hero {
@@ -481,17 +481,35 @@ p {
   margin-bottom: 16px;
 }
 
-.social-media__link {
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media__item + .social-media__item {
+  margin-left: 10px;
+}
+
+.social-media__link--light, .social-media__link--dark {
   display: block;
   width: 44px;
   height: 44px;
   padding: 12px;
-  fill: #afb1b8;
   border-radius: 50%;
+  fill: currentColor;
   cursor: pointer;
 }
 
-.social-media__link:hover, .social-media__link:focus {
+.social-media__link--light:hover, .social-media__link--dark:hover, .social-media__link--light:focus, .social-media__link--dark:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -501,7 +519,13 @@ p {
   background-color: #ffffff;
 }
 
+.social-media__link--dark {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .social-media__logo {
+  fill: inherit;
   width: 20px;
   height: 20px;
 }
@@ -996,53 +1020,6 @@ p {
 .join-text {
   display: block;
   margin-bottom: 21px;
-}
-
-.social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-.social-media__item + .social-media__item {
-  margin-left: 10px;
-}
-
-.social-media__link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.social-media__link:hover, .social-media__link:focus {
-  fill: #ffffff;
-  background-color: #2196f3;
-}
-
-.social-media__link--inverse {
-  fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-media__logo {
-  fill: inherit;
-  width: 20px;
-  height: 20px;
-}
-
-.social-media__logo--inverse {
-  fill: inherit;
 }
 
 .subscribe {
