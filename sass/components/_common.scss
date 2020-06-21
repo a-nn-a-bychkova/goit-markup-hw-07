@@ -20,15 +20,6 @@ html {
   padding-bottom: 94px;
 }
 
-.list {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .container {
   display: flex;
   max-width: 1200px;
@@ -36,17 +27,6 @@ html {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }
 
 .link {
@@ -89,16 +69,6 @@ h4,
 h5,
 h6 {
   color: $titleTextColor;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
 }
 
 .upper {
